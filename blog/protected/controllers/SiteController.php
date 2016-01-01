@@ -22,6 +22,13 @@ class SiteController extends Controller
 	}
 
 	/**
+	 * 访问site控制器的index方法(r=route)：
+	 * http://localhost/index.php?r=site/index
+	 * http://localhost/index.php?r=site
+	 * http://localhost/index.php
+	 * http://localhost
+	 */
+	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
@@ -29,6 +36,12 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+		/**
+		 * Note: render是“渲染”的意思，这里指载入模板
+		 * 模板路径View file: /protected/views/site/index.php
+		 * SiteController对应views/site文件夹
+		 * render('index')访问的是views/site/index.php文件
+		 */
 		$this->render('index');
 	}
 
