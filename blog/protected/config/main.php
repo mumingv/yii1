@@ -18,6 +18,13 @@ return array(
 		'application.components.*',
 	),
 
+	/**
+	 * 修改默认控制器为Index
+	 * 即，当输入 http://localhost 时，
+	 * 对应执行的文件就变为：IndexController.php
+	 */
+	'defaultController' => 'Index',
+
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		/*
